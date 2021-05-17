@@ -1,0 +1,169 @@
+
+body {
+    margin: 0px;
+    padding: 0px;       
+	background: url(bGround6.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed;
+
+ 
+
+	}
+  
+
+ /*-------------- Div LoginBOX --------------*/
+
+.loginbox{
+
+	width: 30%;
+	height: auto;
+	background: #333232;
+	color: #fff;
+	top: 50%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position*/
+	padding: 60px 15px;
+	border-radius: 25px;
+	
+}
+
+
+ 
+
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+.inputfile {
+	
+	cursor: pointer;	
+	font-size: 22px;	
+}
+
+
+
+h1 {
+
+
+	font-size: 18px;
+	text-align: center;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: auto;
+	background: #fb2525;
+	font-size: 22px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	border: none;
+	outline: none;
+	background: #ec964a;
+	cursor: pointer;
+	color: #000;
+}
+
+
+.loginbox input[type="date"]
+{
+	border: none;
+	padding: 5px 10px;
+	height: auto;
+	background: #fb2525;
+	font-size: 18px;
+	border-radius: 15px;
+	color: #fff;
+}
+
+.AfisareMsg {
+
+	width: 90%;
+	margin:10px;
+	background-color: #5e5353;
+	border-radius: 25px;
+	padding: 10px;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/*-------------- Div LogoImg --------------*/
+
+
+
+.logoCentru img {
+
+	width: 28%;
+	height: auto;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 3%;
+	left: 3%;
+}
+
+
+
+
+/*------------ 4k width -----------*/
+	@media screen and (min-width: 1900px) {
+
+	
+	
+
+		h1 {
+
+
+	font-size: 35px;
+		
+		}
+
+	.inputfile {
+
+		font-size: 30px;
+	}
+
+
+	.AfisareMsg {
+
+		font-size:30px;
+	}
+
+	.loginbox input[type="submit"] {
+
+		font-size: 40px;
+	}
+	}
+
+

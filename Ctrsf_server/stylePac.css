@@ -1,0 +1,447 @@
+
+body {
+    margin: 0px;
+    padding: 0px;       
+	background: url(bGround5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed;
+
+
+
+	}
+  
+
+ /*-------------- Div LoginBOX --------------*/
+
+.loginbox{
+
+	width: 26%;
+	height: 62%;
+	background: #333232;
+	color: #fff;
+	top: 50%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position*/
+	padding: 60px 15px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loginbox > * { 
+	flex: 1 1 250px;
+
+ }
+
+ 
+.avatar{
+	
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h2{
+
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 23px;
+	color: green;
+}
+
+h2 p{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 23px;
+	color: red;
+
+}
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{	
+	padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 35px;
+	background: #fb2525;
+	font-size: 17px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	border: none;
+	outline: none;
+	background: #ec964a;
+	cursor: pointer;
+	color: #000;
+}
+
+.loginbox span{
+    margin: 3px;
+    padding: 1px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+/*-------------- Div LogoImg --------------*/
+
+
+
+.logoCentru img {
+
+	width: 32%;
+	height: 18%;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 2%;
+	left: 2%;
+}
+
+
+
+
+
+/*-------------- Div InfoBOX --------------*/
+
+.infobox
+{
+	width: 95%;
+	border: none;
+	outline: none;
+	background: #333232;
+	opacity: 0.9;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+	
+}
+
+.infobox p{
+	margin: 2px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.mesaje{
+
+		position: relative;
+		top:-10%;
+		left: 2%;
+		
+	}
+
+
+/*
+-------- 4k Size---------------------
+@media only screen and (min-width: 2560px){
+
+	.avatar{
+
+		position: absolute;
+		top:-13%;
+		left:36%;
+	
+		height: 23%;
+	}
+
+	.loginbox {
+
+		width: 25%;
+		padding: 2% 3% 1%;
+		border-radius: 10%;
+
+	}
+
+	.loginbox input[type="submit"]
+
+	{
+		margin-bottom: 5%;
+
+
+	}
+
+	.infobox p{
+		
+		font-size: 260%;
+		
+			}
+
+	
+
+	h1{
+    margin: 0;
+    padding: 6% 0 4%;
+    text-align: center;
+    font-size: 260%;
+	}
+
+
+	.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 230%;
+	}
+
+
+
+	.loginbox input[type="text"], input[type="password"]
+	{	
+	
+    font-size: 230%;
+	}
+
+	.loginbox input[type="submit"]
+	{
+	
+	font-size: 230%;
+	height: 10%;
+	}
+
+
+
+	}
+*/
+
+/*-------- Laptop size Large -------- Asta e al meu!!*/
+@media screen and (max-width: 1440px) {
+
+
+	.logoCentru img {
+	
+		width: 32%;
+		height: 18%;
+		background: #51b3bf;
+		opacity: 0.8;
+		border-radius: 25px;
+		padding: 3px;
+		top: 2%;
+		left: 2%;
+		
+		
+		}
+
+	.loginbox {
+
+		height: 59%;
+	}
+	
+	.infobox {
+	
+		top: 89%;
+		width: 95%;
+
+	
+	}
+	
+	.infobox p {
+	
+		font-size: 18px;
+	}
+
+
+	.mesaje{
+
+		position: relative;
+		top:-10%;
+		left: 2%;
+		
+	}
+	
+	}
+
+
+/*-------- Laptop size --------*/
+@media screen and (max-width: 1024px) {
+
+	
+	.logoCentru img {
+	
+		width: 32%;
+		height: 18%;
+		background: #51b3bf;
+		opacity: 0.8;
+		border-radius: 25px;
+		padding: 5px;
+		top: 2%;
+		left: 2%;
+	
+		
+	}
+
+	.loginbox {
+
+		height: 65%;
+	}
+	
+	.infobox {
+	
+		top:90%;
+		 /*Asta imi face sa nu fie lipit div-ul de bottom.*/
+	}
+
+	}
+
+
+/*-------- Tablet size ----(  )----*/
+@media screen and (max-width: 768px) {
+
+		.logoCentru img {
+		
+			width: 32%;
+			height: 18%;
+			left: 2%;
+			top: 2%;
+		
+		}
+		
+		.loginbox{
+		
+			width: 40%;
+			height: 63%;
+			background: #333232;
+			color: #fff;
+			top: 57%;
+			left: 50%;	
+			position: absolute;
+			box-sizing: border-box;		
+			padding: 40px 10px;
+			border-radius: 25px;
+			display: flex;
+			flex-wrap: wrap;
+		
+		}
+		
+		
+		.infobox
+		{
+			outline: 5px;
+			width: 90%;	
+			top: 99%;	
+			margin-bottom: 3%;
+		
+		}
+		
+		.avatar{
+			
+			height: 90px;
+			position: absolute;
+			top: -50px;
+			left: calc(50% - 50px);
+		}
+		
+		}
+
+
+/*-------- Smartphone all sizes ( portrait ) --------*/
+
+ @media screen and (max-width: 425px)  {
+		
+
+		.logoCentru img {
+		
+			top: 2%;
+			left: 2%;
+			width: 65%;
+			height: 13%;				
+			padding: 2%;
+		
+		}
+		
+		.loginbox{
+		
+			width: 75%;
+			height: 64%;
+			background: #333232;
+			color: #fff;
+			top: 58%;
+			left: 50%;	
+			margin-bottom: 10%;
+			
+		}
+		
+		
+		.infobox
+		{
+			width: 95%;			
+			top: 105%;
+			margin-bottom: 5%;
+			
+		
+		
+		}
+		
+		.infobox p{
+			margin: 2%;
+			padding: 2%;			
+			font-size: 80%;
+			color: white;
+			
+		}
+		
+		.avatar{
+			
+			height: 75px;
+			position: absolute;
+			top: -40px;
+			left: calc(50% - 40px);
+		}
+
+	}
+
+

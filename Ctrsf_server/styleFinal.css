@@ -1,0 +1,395 @@
+
+body {
+    margin: 0px;
+    padding: 0px;       
+	background: url(bGround5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed;
+
+
+/*Astea doua sunt folosite pentru a ramane fundalul full, cand dau scroll*/
+
+
+}
+  
+
+ /*-------------- Div LoginBOX --------------*/
+
+.loginbox{
+
+	width: 320px;
+	height: 370px;
+	background: #333232;
+	color: #fff;
+	top: 50%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position  
+	aaa
+
+	*/
+	padding: 60px 15px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loginbox > * { 
+	flex: 1 1 250px;
+
+ }
+
+ 
+.avatar{
+	
+	height: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 23px;
+}
+
+h2{
+
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 23px;
+	color: green;
+}
+
+h2 p{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 23px;
+	color: red;
+
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{	
+	padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 35px;
+	background: #fb2525;
+	font-size: 17px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	border: none;
+	outline: none;
+	background: #ec964a;
+	cursor: pointer;
+	color: #000;
+}
+
+
+
+
+/*-------------- Div LogoImg --------------*/
+
+
+
+.logoCentru img {
+
+	width: 310px;
+	height: 150px;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 3%;
+	left: 3%;
+}
+
+
+
+
+
+/*-------------- Div InfoBOX --------------*/
+
+.infobox
+{
+	width: 95%;
+	border: none;
+	outline: none;
+	background: #333232;
+	opacity: 0.9;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+	
+}
+
+.infobox p{
+	margin: 2px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+
+
+/*-------- Laptop size Large -------- Asta e al meu!!*/
+@media screen and (max-width: 1440px) {
+
+
+.logoCentru img {
+
+	width: 300px;
+	height: 130px;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 3px;
+	top: 8%;
+	left: 10%;
+	
+	
+	}
+
+.infobox {
+
+	top: 87%;
+	width: 95%;
+
+
+}
+
+.infobox p {
+
+	font-size: 18px;
+}
+
+}
+
+
+/*-------- Laptop size --------*/
+
+
+@media screen and (max-width: 1024px) {
+
+
+.logoCentru img {
+
+	width: 250px;
+	height: 110px;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 2%;
+	left: 3%;
+
+	
+}
+
+.infobox {
+
+	top:95%;
+	 /*Asta imi face sa nu fie lipit div-ul de bottom.*/
+}
+
+}
+
+
+
+
+/*-------- Tablet size --------*/
+@media screen and (max-width: 768px) {
+
+
+body {
+
+
+min-height: 100%;
+background-attachment: fixed;
+}
+
+.logoCentru img {
+
+	width: 270px;
+	height: 90px;
+	left: 3%;
+	top: 4%;
+
+}
+
+.loginbox{
+
+	width: 300px;
+	height: 350px;
+	background: #333232;
+	color: #fff;
+	top: 55%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position  
+	aaa
+
+	*/
+	padding: 40px 10px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+.infobox
+{
+	outline: 5px;
+	width: 90%;
+	border: none;
+	outline: none;
+	background: #333232;
+	opacity: 0.9;
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+	margin-bottom: 5%;
+	
+
+}
+
+.avatar{
+	
+	height: 90px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+}
+
+
+/*-------- Smartphone all sizes ( portrait ) --------*/
+
+
+ @media screen and (orientation:portrait)  {
+
+
+
+.logoCentru img {
+
+	top: 3%;
+	left: 1%;
+	width: 240px;
+	height: 65px;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+
+}
+
+.loginbox{
+
+	width: 280px;
+	height: 320px;
+	background: #333232;
+	color: #fff;
+	top: 55%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position  
+	aaa
+
+	*/
+	padding: 40px 10px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 7%;
+
+}
+
+
+.infobox
+{
+	width: 90%;
+	border: none;
+	outline: none;
+	background: #333232;
+	opacity: 0.9;
+	position: absolute;
+	top: 97%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+
+
+}
+
+.infobox p{
+	margin: 2px;
+	padding:5px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.avatar{
+	
+	height: 75px;
+	position: absolute;
+	top: -40px;
+	left: calc(50% - 40px);
+}
+
+}
+

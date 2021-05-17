@@ -1,0 +1,332 @@
+
+body {
+    margin: 0px;
+    padding: 0px;       
+	background: url(bGround5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed;
+	}
+  
+
+ /*-------------- Div PDF_box --------------*/
+
+.PDF_box{
+
+	/*width: 320px;
+	height: 370px;
+*/
+	width: 40%;
+	height: 45%;
+	background: #333232;
+	color: #fff;
+	top: 65%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position*/
+	padding: 30px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.PDF_box > * { 
+	flex: auto;  /*sets how a flex item will grow or shrink to fit the space available in its flex container*/
+
+ }
+
+ 
+h1{
+    margin: 0;
+    padding: 0 0 50px;
+    text-align: center;
+    font-size: 150%;
+}
+
+
+
+/*-------------- Div LogoImg --------------*/
+
+
+.logoCentru img {
+
+	width: 32%;
+	height: 18%;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 2%;
+	left: 2%;
+}
+
+
+
+/*-------------- Div InfoBOX --------------*/
+
+.infobox
+{
+	width: 95%;
+	border: none;
+	outline: none;
+	background: #3cb041;
+	opacity: 0.9;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+	
+}
+
+.infobox p{
+	margin: 2px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+/*.PDF_logo img{
+
+		position: absolute;
+		top:65%;
+		left:40%;
+     	width: 8%;
+		height: 16%;
+}*/
+
+
+
+/*-------- 4k Size---------------------*/
+@media screen and (max-width: 2560px) {
+
+	.infobox p{
+		
+		font-size: 260%;
+		
+			}
+	
+	
+	.PDF_box h1{
+	
+		font-size: 330%;
+	}	
+
+	.PDF_logo img{
+
+		position: absolute;
+		top:20%;
+		left: calc(555% - 100px);
+		width:50% ;
+		height: 16%;
+	}
+
+/*-------- Laptop size Large -------- Asta e al meu!!*/
+@media screen and (max-width: 1440px) {
+
+
+		.PDF_box {
+	
+			top:70%;
+			width: 30%;
+			height: 40%;
+		}
+	
+		.PDF_box h1{
+	
+    	 font-size: 170%;
+		}
+			
+		.logoCentru img {
+	
+		
+		background: #51b3bf;
+		opacity: 0.8;
+		border-radius: 23px;
+		padding: 0,5%;
+		top: 2%;
+		left: 2%;	
+		}
+			
+		.infobox {
+	
+		top: 35%;
+		width: 95%;
+	
+		}
+			
+		.infobox p {
+	
+		font-size: 150%;
+		}	
+	
+
+		.PDF_logo img{
+
+		position: absolute;
+		top:65%;
+		left: 46%;		
+		width: 8%;
+		height: 16%;
+		}
+
+		}
+
+/*-------- Laptop size --------*/
+@media screen and (max-width: 1024px) {
+
+		
+	.logoCentru img {
+	/*
+		width: 270px;
+		height: 90px;*/
+
+		width: 32%;
+		height: 18%;
+		left: 2%;
+		top: 2%;
+	
+	}
+	
+	.infobox {
+
+		
+		top:35%;
+
+		 /*Asta imi face sa nu fie lipit div-ul de bottom.*/
+	}
+
+	.infobox p{
+		 font-size: 120%;
+	}
+
+	.PDF_box {
+
+		width: 30%;
+		top:70%;
+	}
+
+	.PDF_box h1{
+
+		font-size: 140%;
+	}
+
+	}
+
+	.PDF_logo img{
+
+		position: absolute;
+		top:63%;
+		left: 46%;
+		width: 8%;
+		height: 16%;
+	}
+
+/*-------- Tablet size --------*/
+@media screen and (max-width: 768px) {
+
+		
+	.logoCentru img {
+	/*
+		width: 270px;
+		height: 90px;*/
+
+		width: 32%;
+		height: 18%;
+		left: 2%;
+		top: 2%;
+	
+	}
+	
+	
+	.PDF_box {
+
+		top:65%;
+		left: 50%;
+		width: 40%;
+	}
+	
+	
+	.infobox{
+
+	  top: 30%; 
+
+	}
+
+	.PDF_logo img{
+
+		position: absolute;
+		top:59%;
+		left: 45%;
+		width: 11%;
+		height: 16%;
+	}
+
+
+
+		}
+
+/*-------- Smartphone all sizes ( portrait ) --------*/
+@media screen and (orientation:portrait)  {
+
+
+	.logoCentru img {
+	
+		top: 2%;
+		left: 2%;
+		width: 60%;
+		height: 18%;
+		
+	
+	}
+	
+	.PDF_box{
+	
+		
+		width: 75%;
+		height: 40%;
+		top: 65%;
+		left: 50%;	
+		padding: 25px 10px;
+	
+	}
+
+	.PDF_box h1{
+
+		font-size: 110%;
+	}
+	
+	
+	.infobox
+	{
+	
+		top: 35%;
+	
+	
+	}
+	
+	.infobox p{
+		
+		font-size: 90%;
+		
+	}
+
+	.PDF_logo img{
+
+		top:58%;
+		left: 39%;
+		width: 24%;
+		height: 16%;
+	}	
+
+	}
+

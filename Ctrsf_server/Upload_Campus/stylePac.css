@@ -1,0 +1,392 @@
+
+body {
+    margin: 50px;
+    padding: 50px;       
+	background: url(bGround5.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed;
+
+
+
+
+	}
+  
+
+ /*-------------- Div LoginBOX --------------*/
+
+.loginbox{
+
+	width: 26%;
+	height: 410px;
+	background: #333232;
+	color: #fff;
+	top: 50%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position*/
+	padding: 60px 15px;
+	border-radius: 25px;
+
+}
+
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{	
+	padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 35px;
+	background: #fb2525;
+	font-size: 17px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	border: none;
+	outline: none;
+	background: #ec964a;
+	cursor: pointer;
+	color: #000;
+}
+
+.loginbox span{
+    margin: 3px;
+    padding: 1px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.avatar{
+	
+	width: 90px;
+	height: auto;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 23px;
+}
+
+
+.logoCentru img {
+
+	width: 32%;
+	height: auto;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 2%;
+	left: 2%;
+}
+
+
+.infobox
+{
+	width: 95%;
+	border: none;
+	outline: none;
+	background: #333232;
+	opacity: 0.9;
+	position: absolute;
+	top: 97%;
+	left: 50%;
+	transform: translate(-50%, -50%); 	
+	border-radius: 30px;
+	margin-bottom: 10px;
+	
+}
+
+.infobox p{
+	margin: 2px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.mesaje{
+
+		position: absolute;
+		top:83%;
+		left: 6%;
+		
+	}
+
+
+
+
+
+
+
+
+
+/*-------- 4k size ----(  )----*/
+@media only screen and (min-width: 2560px){
+
+	.avatar{		
+		
+		width: 120px;
+		
+	}
+
+	.loginbox {
+
+		width: 30%;
+		height: 700px;
+		border-radius: 35px;
+		
+
+	}
+
+	.infobox p{
+		
+		font-size: 260%;
+		
+			}
+
+	
+
+	h1{
+    margin: 0;
+    padding: 6% 0 4%;
+    text-align: center;
+    font-size: 260%;
+	}
+
+
+	.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 220%;
+	}
+
+
+
+	.loginbox input[type="text"], input[type="password"]
+	{	
+	
+    font-size: 210%;
+    height: 80px;
+	}
+
+	.loginbox input[type="submit"]
+	{
+	
+	font-size: 220%;
+	height: 14%;
+	}
+
+	.mesaje {
+
+		font-size: 220%;
+		top:80%;
+	}
+
+
+
+	}
+
+
+
+
+
+/*-------- Tablet size ----(  )----*/
+@media screen and (max-width: 768px) {
+
+	
+		
+		.loginbox{
+		
+			width: 40%;
+			height: 63%;
+			background: #333232;
+			color: #fff;
+			top: 57%;
+			left: 50%;	
+			position: absolute;
+			box-sizing: border-box;		
+			padding: 40px 10px;
+			border-radius: 25px;
+			display: flex;
+			flex-wrap: wrap;
+		
+		}
+		
+		
+		.infobox
+		{
+			outline: 5px;
+			width: 90%;	
+			top: 102%;	
+			margin-bottom: 3%;
+		
+		}
+		
+		.avatar{
+			
+			height: 90px;
+			position: absolute;
+			top: -50px;
+			left: calc(50% - 50px);
+		}
+
+		.mesaje {
+
+			top:86%;
+		}
+		
+		}
+
+
+/*-------- Smartphone all sizes ( portrait ) --------*/
+@media only screen and (min-width : 320px) and (max-width : 667px) and (orientation : portrait) {	
+
+		.logoCentru img {
+		
+			
+			width: 210px;
+					
+		}
+		
+		.loginbox {
+		
+			width: 75%;
+			height: 63%;			
+			top: 58%;
+			left: 50%;	
+			margin-bottom: 10%;
+			
+		}
+		
+		
+		.infobox
+		{
+			width: 95%;			
+			top: 120%;
+			margin-bottom: 15%;		
+		
+		}
+		
+		.infobox p{
+			margin: 2%;
+			padding: 2%;			
+			font-size: 85%;
+			color: white;			
+		}
+		
+		.avatar{
+			
+			height: 75px;
+			position: absolute;
+			top: -45px;
+			left: calc(50% - 40px);
+		}
+
+		.mesaje {
+
+			position: absolute;
+			top: 87%;
+			left: 6%;
+		}
+
+	}
+
+@media only screen and (min-width : 320px) and (max-width : 667px) and (orientation : landscape){
+		
+
+		.logoCentru img {
+		
+			
+			width: 210px;
+					
+		}
+		
+		.loginbox {
+		
+			width: 75%;
+			height: 113%;			
+			top: 88%;
+			left: 50%;	
+			margin-bottom: 10%;
+			
+		}
+		
+		
+		.infobox
+		{
+			width: 95%;			
+			top: 185%;
+			margin-bottom: 15%;		
+		
+		}
+		
+		.infobox p{
+			margin: 2%;
+			padding: 2%;			
+			font-size: 85%;
+			color: white;			
+		}
+		
+		.avatar{
+			
+			height: 75px;
+			position: absolute;
+			top: -45px;
+			left: calc(50% - 40px);
+		}
+
+		.mesaje {
+
+			position: absolute;
+			top: 87%;
+			left: 6%;
+		}
+
+	}
+ 
+
+
+
+

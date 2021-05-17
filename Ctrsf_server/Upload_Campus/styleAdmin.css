@@ -1,0 +1,201 @@
+
+body {
+    margin: 0px;
+    padding: 0px;       
+	background: url(bGround6.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	min-height: 100%;
+	background-attachment: fixed; 
+
+	}
+  
+
+ /*-------------- Div LoginBOX --------------*/
+
+.loginbox{
+
+	width: 23%;
+	height: auto;
+	background: #333232;
+	color: #fff;
+	top: 60%;
+	left: 50%;	
+	position: absolute;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%); /* transform este folosit pentru change shape, size and position*/
+	padding: 35px 15px;
+	border-radius: 25px;
+
+	
+}
+
+/*.loginbox > * { 
+	flex: 1 1 250px;
+
+ }*/
+
+ 
+.avatar{
+	
+	width: 90px; 
+	height: auto;
+	position: absolute;
+	top: -60px;
+	left: calc(50% - 50px);
+}
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+
+.loginbox label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15%;
+}
+
+
+
+.loginbox input[type="text"], input[type="password"]
+{	
+	padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: auto;
+	background: #fb2525;
+	font-size: 30px;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.loginbox input[type="submit"]:hover
+{
+	border: none;
+	outline: none;
+	background: #ec964a;
+	cursor: pointer;
+	color: #000;
+}
+
+
+
+.loginbox span{
+    margin: 3px;
+    padding: 2px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/*-------------- Div LogoImg --------------*/
+
+
+.logoCentru img {
+
+	width: 32%;
+	height: auto;
+	position: absolute;
+	background: #51b3bf;
+	opacity: 0.8;
+	border-radius: 25px;
+	padding: 5px;
+	top: 3%;
+	left: 3%;
+}
+
+
+.mesaje{
+
+		position: relative;
+		
+		
+		
+	}
+
+
+
+	/*------------ 4k width -----------*/
+	@media screen and (min-width: 1900px) {
+
+
+  		.loginbox {
+    				 
+    				 position: absolute;
+    				height: auto;
+    				 width: 800px;
+    				 border-radius: 65px;
+
+  		
+  				  }
+
+  			h1	{
+    			
+    			text-align: center;
+    			left:280px;    			
+    			font-size: 40px;
+
+				}
+
+		.loginbox label{
+    
+    	font-size: 35px;
+		}
+
+
+		
+		
+		
+		.loginbox input[type="text"], input[type="password"]
+		{	
+			
+		    font-size: 30px;
+		}
+		
+		.loginbox input[type="submit"]
+		{
+			
+			font-size: 35px;
+			margin-bottom: 0px;
+		}
+
+		.mesaje{
+
+		top:15px;
+		font-size: 30px;
+		
+	}
+
+
+		
+}
+
+
+
